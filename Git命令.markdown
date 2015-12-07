@@ -65,6 +65,8 @@ git branch -D &lt;branch-name&gt;
  7. 将远程分支与本地分支进行**分支跟踪**，那么当在使用remote命令时就不用专门指定远程分支
 git branch --set-upstream-to=origin/&lt;branch&gt;
     &lt;local-branch&gt;
+
+
 > 从远程分支 checkout 出来的本地分支，称为 跟踪分支 (tracking branch)。跟踪分支是一种和某个远程分支有直接联系的本地分支。在跟踪分支里输入 git push，Git 会自行推断应该向哪个服务器的哪个分支推送数据。同样，在这些分支里运行 git pull 会获取所有远程索引，并把它们的数据都合并到本地分支中来。
 在克隆仓库时，Git 通常会自动创建一个名为 master 的分支来跟踪 origin/master。这正是 git push 和 git pull 一开始就能正常工作的原因。当然，你可以随心所欲地设定为其它跟踪分支，比如 origin 上除了 master 之外的其它分支。
 
